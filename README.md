@@ -1,6 +1,6 @@
 ## Sistemas-Distribuidos-java-Mqtt
 ### **MQTT**
- <div style="text-align: justify;"> MQTT, sigla de Message Queuing Telemetry Transport, é um protocolo de mensagens leve para sensores e pequenos  
+ <div style="text-align: justify"> MQTT, sigla de Message Queuing Telemetry Transport, é um protocolo de mensagens leve para sensores e pequenos  
   dispositivos móveis otimizado para redes  TCP/IP. O esquema de troca de mensagens é fundamentado no modelo Publicador-Subscritor, extremamente  
   simples e leve.</div>
   
@@ -9,10 +9,14 @@
 ## Tecnologias utiizadas para o projeto
 * [Eclipse Paho Client Mqttv3](https://mvnrepository.com/artifact/org.eclipse.paho/org.eclipse.paho.client.mqttv3)
 
-* jacafx 16
+* javafx 11
+* [Scene Builder 16.0.0](https://gluonhq.com/products/scene-builder/)
+
+## Executando o Projeto
+<div style="text-align: justify">O presente projeto é constituido de dois projetos que devem ser usados de acordo com cada função, na pasta MQTTPUB é o projeto que ficará responsavel por publicar(publish) os arquivos, na pasta MQTTSUB  é o projeto que ficará responsavel por receber(subscribe) os arquivos, logo assim cada pasta é um projeto para determinada função.</div>
 
 ## Descrição do projeto
-<div> O presente projeto foi desenvolvido como prática e atribuição da segunda nota da disciplica Sistemas distribuidos tendo como foco o uso do MQTT,o objetivo do sistema se baseia em publicar(publish) aos clientes que estão escritos(subscribe) no topico "/justnow" , arquivos de (video,imagem,texto) assim podendo os mesmos acessar cada arquivo, para maior abstração  algumas imagens do sistema abaixo.</div>
+<div style="text-align: justify"> O presente projeto foi desenvolvido como prática e atribuição da segunda nota da disciplica Sistemas distribuidos tendo como foco o uso do MQTT,o objetivo do sistema se baseia em publicar(publish) aos clientes que estão escritos(subscribe) no topico "/justnow" , arquivos de (video,imagem,texto) assim podendo os mesmos acessar cada arquivo, para maior abstração  algumas imagens do sistema abaixo.</div>
 
 ## screen just now publish
 <div >
