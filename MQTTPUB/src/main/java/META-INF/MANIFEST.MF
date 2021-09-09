@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Main-Class: com.anderson.mqttpub.MainPrincipal
+Class-Path: json-20210307.jar javafx-graphics-11.0.2.jar commons-io-2.6.
+ jar javafx-controls-11.0.2-linux.jar jfoenix-9.0.10.jar javafx-controls
+ -11.0.2.jar org.eclipse.paho.client.mqttv3-1.2.5.jar javafx-fxml-11.0.2
+ -linux.jar controlsfx-11.1.0.jar javafx-graphics-11.0.2-linux.jar javaf
+ x-base-11.0.2.jar javafx-media-14-linux.jar javafx-fxml-11.0.2.jar java
+ fx-base-11.0.2-linux.jar javafx-media-14.jar commons-lang3-3.5.jar
+

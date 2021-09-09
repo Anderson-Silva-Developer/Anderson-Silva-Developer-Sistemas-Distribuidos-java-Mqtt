@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Main-Class: com.anderson.mqttsub.MainPrincipal
+Class-Path: javafx-fxml-11.0.2-linux.jar json-20210307.jar javafx-media-
+ 14-linux.jar javafx-graphics-11.0.2-linux.jar controlsfx-11.1.0.jar jav
+ afx-fxml-11.0.2.jar javafx-controls-11.0.2.jar javafx-base-11.0.2.jar o
+ rg.eclipse.paho.client.mqttv3-1.2.5.jar javafx-base-11.0.2-linux.jar ja
+ vafx-controls-11.0.2-linux.jar javafx-media-14.jar javafx-graphics-11.0
+ .2.jar jfoenix-9.0.10.jar
+

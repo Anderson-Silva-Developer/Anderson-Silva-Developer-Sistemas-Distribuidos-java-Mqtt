@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-radius: 5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anderson.mqttsub.Controller">
+   <children>
+      <TabPane fx:id="base" layoutX="-6.0" prefHeight="600.0" prefWidth="807.0" side="BOTTOM" style="-fx-background-color:#1C1C1C; -fx-background-radius: 5;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab fx:id="homeTab" style="-fx-background-: #1C1C1C;" text="Home">
+
+               <content>
+
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="569.0" prefWidth="818.0">
+                     <children>
+                        <ImageView fitHeight="259.0" fitWidth="255.0" layoutX="276.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/home.png" />
+                           </image></ImageView>
+                        <Label layoutX="325.0" layoutY="128.0" text="just now" textFill="#888a12">
+                           <font>
+                              <Font name="Liberation Sans" size="43.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="310.0" layoutY="341.0" text="the best trailer posts" textFill="#888a12">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <Label layoutX="700.0" layoutY="20.0" text="V.0.1.SUB" textFill="#888a12">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                       
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab fx:id="videosTab" text="My Files">
+            <content>
+              <AnchorPane fx:id="panevideo" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXListView fx:id="list" layoutX="528.0" layoutY="49.0" prefHeight="249.0" prefWidth="203.0" />
+                        <Pane fx:id="videos" layoutX="14.0" layoutY="22.0" prefHeight="312.0" prefWidth="505.0" style="-fx-background-color: #1C1C1C;">
+                           <children>
+                              <MediaView fx:id="mediaView" fitHeight="250.0" fitWidth="450.0" layoutX="28.0" layoutY="24.0" />
+                              <JFXButton fx:id="btnPlay" layoutX="20.0" layoutY="286.0" text="Play" textFill="#888a12" />
+                              <JFXButton fx:id="btnPause" layoutX="224.0" layoutY="286.0" text="Pause" textFill="#888a12" />
+                              <JFXButton fx:id="btnReset" layoutX="428.0" layoutY="286.0" text="Reset" textFill="#888a12" />
+                           </children>
+                        </Pane>
+                        <Label layoutX="180.0" layoutY="386.0" text="Information" textFill="#888a12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="imageThailer" fitHeight="151.0" fitWidth="102.0" layoutX="42.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/defaultImage.jpg" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="42.0" layoutY="375.0" prefHeight="5.0" prefWidth="686.0" />
+                        <Label layoutX="182.0" layoutY="421.0" text="Title" textFill="#888a12">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="180.0" layoutY="463.0" text="Launch" textFill="#888a12">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="184.0" layoutY="511.0" text="Duration:" textFill="#888a12">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="titulo" layoutX="293.0" layoutY="420.0" prefHeight="16.0" prefWidth="340.0" text="--" textFill="#888a12" />
+                        <Label fx:id="duracao" layoutX="297.0" layoutY="511.0" prefHeight="16.0" prefWidth="340.0" text="--" textFill="#888a12" />
+                        <Label fx:id="lancamento" layoutX="297.0" layoutY="465.0" prefHeight="16.0" prefWidth="340.0" text="--" textFill="#888a12" />
+                      
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="configTab" text="Settings">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="569.0" prefWidth="818.0">
+                     <children>
+                        <TextField fx:id="fieldPort" editable="false" layoutX="270.0" layoutY="195.0" prefHeight="24.0" prefWidth="255.0" />
+                        <TextField fx:id="fieldAdress" editable="false" layoutX="270.0" layoutY="258.0" prefHeight="24.0" prefWidth="255.0" />
+                        <TextField fx:id="fieldTopic" editable="false" layoutX="270.0" layoutY="330.0" prefHeight="24.0" prefWidth="255.0" />
+                        <Label layoutX="175.0" layoutY="194.0" text="Port" textFill="#888a12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="175.0" layoutY="254.0" text="Address" textFill="#888a12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="175.0" layoutY="330.0" text="Topic" textFill="#888a12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="177.0" text="Ex:1883" textFill="#e1dada" />
+                        <Label layoutX="271.0" layoutY="313.0" text="Ex/default: /justnow/publication" textFill="#e1dada" />
+                        <Label layoutX="271.0" layoutY="238.0" text="Ex:localhost" textFill="#e1dada" />
+
+                        <ImageView fx:id="imageEditPort" fitHeight="32.0" fitWidth="31.0" layoutX="540.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/edit.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imageEditAdress" fitHeight="32.0" fitWidth="31.0" layoutX="540.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/edit.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imageEditTopic" fitHeight="32.0" fitWidth="31.0" layoutX="540.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/edit.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imageEditClientId" fitHeight="32.0" fitWidth="31.0" layoutX="544.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/edit.png" />
+                           </image>
+                        </ImageView>
+
+                        <ImageView fx:id="imagemSave" fitHeight="31.0" fitWidth="29.0" layoutX="325.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/save.png" />
+                           </image>
+                        </ImageView>
+
+                        <Label layoutX="356.0" layoutY="43.0" text="Settings" textFill="#888a12">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btneditPort" layoutX="540.0" layoutY="185.0" prefHeight="50.0" prefWidth="50.0" text="." textFill="#433838" />
+                        <JFXButton fx:id="btneditAdress" layoutX="540.0" layoutY="248.0" prefHeight="50.0" prefWidth="50.0" text="." textFill="#433838" />
+                        <JFXButton fx:id="btneditTopic" layoutX="540.0" layoutY="320.0" prefHeight="50.0" prefWidth="50.0" text="." textFill="#433838" />
+                        <JFXButton fx:id="btnSave" layoutX="311.0" layoutY="381.0" prefHeight="50.0" prefWidth="173.0" text="Save" textFill="#bdd03e">
+
+                           <font>
+                              <Font size="25.0" />
+                           </font></JFXButton>
+                        <JFXButton fx:id="btneditClientId" layoutX="540.0" layoutY="127.0" prefHeight="50.0" prefWidth="50.0" text="." textFill="#433838" />
+
+                        <TextField fx:id="fieldclientId" editable="false" layoutX="270.0" layoutY="137.0" prefHeight="24.0" prefWidth="255.0" />
+                        <Label layoutX="172.0" layoutY="140.0" text="ClientId" textFill="#888a12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="271.0" layoutY="119.0" text="Ex:clientsub" textFill="#e1dada" />
+                        <Pane fx:id="panewaitconection" layoutX="6.0" opacity="0.83" prefHeight="568.0" prefWidth="800.0" style="-fx-background-color: #000;" />
+                        <JFXButton fx:id="btnconection" layoutX="553.0" layoutY="41.0" prefHeight="72.0" prefWidth="185.0" text="unplugged" textFill="#f20e02">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <graphic>
+                              <ProgressIndicator fx:id="conectionIndication" maxWidth="28.0" prefHeight="41.0" prefWidth="22.0" progress="0.0" visible="false" />
+                           </graphic></JFXButton>
+                        <Label layoutX="530.0" layoutY="143.0" text="*" textFill="#ee0202">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="530.0" layoutY="203.0" text="*" textFill="#ee0202">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="530.0" layoutY="265.0" text="*" textFill="#ee0202">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="exitTab" text="Exit">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="569.0" prefWidth="818.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>

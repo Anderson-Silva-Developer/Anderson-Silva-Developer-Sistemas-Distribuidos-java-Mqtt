@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact name="MQTTPUB:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MQTTPUB_jar</output-path>
+    <root id="root">
+      <element id="archive" name="MQTTPUB.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="MQTTPUB" />
+      </element>
+      <element id="library" level="project" name="Maven: org.json:json:20210307" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:11.0.2" />
+      <element id="library" level="project" name="Maven: commons-io:commons-io:2.6" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:linux:11.0.2" />
+      <element id="library" level="project" name="Maven: com.jfoenix:jfoenix:9.0.10" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:11.0.2" />
+      <element id="library" level="project" name="Maven: org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:linux:11.0.2" />
+      <element id="library" level="project" name="Maven: org.controlsfx:controlsfx:11.1.0" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:linux:11.0.2" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:11.0.2" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:linux:14" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:11.0.2" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:linux:11.0.2" />
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:14" />
+      <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.5" />
+    </root>
+  </artifact>
+</component>
